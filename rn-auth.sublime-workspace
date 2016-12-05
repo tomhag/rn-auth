@@ -1,0 +1,286 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "\nSSH Keys\n----------------------------\n1. Generete SSH keys\n\t- ssh-keygen -t rsa -b 4096 -C \"tomhag@yourmail.com\"\n\n2. Start local SSH agent process: \n\t- eval \"$(ssh-agent -s)\"\n\n3. Copy public SSH key: \n\t- pbcopy < ~/.ssh/id_rsa.pub\n\n4. Add SSH-key in your Github profile settings\n\n5. Test connection\n\t- ssh -T git@github.com\n\nGIT setup NEW Push\n----------------------------\n1. Goto project folder\n\n2. Git config --global user.name = xxx\n\t Git config --global user.email = xxx\n\n3. Git init\n\t Git add .\n\t Git commit -m \"message\"\n\t Git push\n\nGIT setup Clone\n----------------------------\n1. Goto dev folder\n\n2. git clone https://github.com/tomhag/rn-albums\n\nTerminal\n----------------------------\n1. .bash_profile\n\t- ezprmompt.net\n\texport PS1=\"\\[\\e[33m\\]\\h[\\u]\\n\\w\\\\$:\\[\\e[m\\]\"\n\n2. Tmux\n\t- brew install tmux\n\nSublimeText\n----------------------------\n1. https://packagecontrol.io/installation\n\n2. Preferences.sublime-settings:\n\t{\n\t\t\"rulers\": [80],\n\t\t\"word_wrap\": true,\n\t\t\"tab_size\": 2,\n\t\t\"font_face\": \"Ubuntu mono\",\n\t\t\"font_size\": 12,\n\t\t\"ignored_packages\":\n\t\t[\n\t\t\t\"Vintage\"\n\t\t]\n\t}\n\n3. Keybindings\n\t[\n\t\t{ \"keys\": [\"super+-\"], \"command\": \"toggle_comment\", \"args\": { \"block\": false } },\n\t\t{ \"keys\": [\"super+alt+-\"], \"command\": \"toggle_comment\", \"args\": { \"block\": true } },\n\t\t{ \"keys\": [\"super+alt+p\"], \"command\": \"fold\" },\n\t\t{ \"keys\": [\"super+alt+å\"], \"command\": \"unfold\" },\n\t]\n\n4. Packages\n\n\nReactNative Setup Process\n----------------------------\n1. XCode\n\t* from appstore\n\n2. Homebrew - Used to install node\n\t- in browser: goto 'brew.sh' and copy command line\n\t- in terminal: paste into terminal and run\n\n3. NodeJS - \n\t- in terminal: brew install node\n\n4. Watchman - Hot reload\n\t- in terminal: brew install watchman\n\n5. ReactNative CLI - RN project generation\n\t- in terminal: npm install -g react-native-cli\n\n6. Goto dev folder (project folder is created)\n\t- react-native init albums\n\n7. Run project (go to project folder)\n\t- react-native run-ios\n\n\nESLint\n-----------------------------\n1. in project folder: npm install -g eslint\n\n2. check if package control is installed\n\n3. per project eslint rules\n\n4. tell eslint to make use of the per project rules\n\t.eslintrc in project root folder:\n\t\t{\n\t\t\t\"extends\" : \"rallycoding\"\n\t\t}\n\n5. install package 'SublimeLinter' and 'SublimeLinter-contrib-eslint'\n\n6. install babel\n  choose syntax(bottom-right) button and \"open all with curr..\" - > Babel > Javascript\n\n7. install babelsnippets\n\n8. install emmet",
+			"file": "/Users/sted/CloudStation/Pers/learn/setup_reactnative.md",
+			"file_size": 2401,
+			"file_write_time": 131246758050000000,
+			"settings":
+			{
+				"buffer_size": 2439,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.ios.js",
+			"settings":
+			{
+				"buffer_size": 1055,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pac",
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 428.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/sted/Desktop/ReactNative",
+		"/Users/sted/Desktop/ReactNative/auth"
+	],
+	"file_history":
+	[
+		"/Users/sted/Desktop/ReactNative/auth/test.js",
+		"/Users/sted/Desktop/ReactNative/auth/index.ios.js",
+		"/Users/sted/Desktop/ReactNative/auth/.eslintrc",
+		"/Users/sted/CloudStation/Pers/learn/dev_git_ref.md",
+		"/Users/sted/CloudStation/Pers/learn/setup_mac_ref.md",
+		"/Users/sted/CloudStation/Pers/learn/setup_dev_ref.md"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/sted/CloudStation/Pers/learn/setup_reactnative.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2439,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								114,
+								114
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1117.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "index.ios.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1055,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "rn-auth.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		]
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
