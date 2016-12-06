@@ -6,11 +6,11 @@ import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
 // #2 Create component - Functional
-const Button = ({ anyPress, children }) => {
+const Button = ({ onPress, children }) => {
 	const { buttonStyle, textStyle } = styles;
 
 	return (
-		<TouchableOpacity onPress={anyPress} style={buttonStyle}>
+		<TouchableOpacity onPress={onPress} style={buttonStyle}>
 			<Text style={textStyle}>
 				{children}
 			</Text>
@@ -22,7 +22,7 @@ const styles = {
 	textStyle: {
 		alignSelf: 'center',
 		color: '#007aff',
-		fontSize: 16,
+		fontSize: 20,
 		fontWeight: '600',
 		paddingTop: 10,
 		paddingBottom: 10
@@ -32,7 +32,7 @@ const styles = {
 		flex: 1,
 		alignSelf: 'stretch',
 		backgroundColor: '#2ff',
-		borderRadius: 5,
+		borderRadius: 2,
 		borderWidth: 1,
 		borderColor: '#007aff',
 		marginLeft: 5,
